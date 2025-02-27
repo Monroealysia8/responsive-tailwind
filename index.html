@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Media Queries</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-center bg-pink-600 text-white h-40">
+      <header>
+        <h1 class="text-6xl p-8">Art is what you make it!</h1>
+      </header>
+      <nav>
+        <ul
+          class="flex justify-end items-end gap-6 cursor-pointer text-blue-900 pr-5 border outline-5"
+        >
+          <li class="text-black">Abstract Art</li>
+          <li class="text-black">Modern Art</li>
+          <li class="text-black">Contemporary Art</li>
+        </ul>
+      </nav>
+    </div>
+    <main class="bg-black text-white">
+      <div class="box">
+        <img
+          src="https://images.unsplash.com/photo-1735374710971-f77272b2f549?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
+          alt="bright colors of pink with a woman blurred"
+        />
+      </div>
+      <div>
+        <!--Create a container with a background color and padding that changes at different breakpoints (using Tailwind's sm, md, lg, xl classes).-->
+        <p class="text-black text-xl font-sans sm:break-words  p-10 m-10 bg-white sm:p-1 md:p-2 lg:p-3 xl:p-4">
+          Art is constantly evolving, driven by shifts in culture, technology,
+          and societal values. As new mediums, ideas, and perspectives emerge,
+          the definition and boundaries of art are continually redefined,
+          reflecting the dynamic world around us.
+        </p>
+      </div>
+      <div class="flex-col justify-center align-end text-xl p-10 md:text-2xl md:text-3xl sm:p-1 md:p-3 lg:p-5 xl:p-7">
+        <div class="font-mono p-5 bg-pink-600">
+          <p>
+            Abstract art is a form of art that uses shapes, colors, and forms to
+            create compositions that do not directly represent the physical
+            world. Unlike traditional art, which seeks to depict objects or
+            scenes realistically, abstract art focuses on the expression of
+            emotions, ideas, or concepts without relying on recognizable
+            imagery. Artists working in this style often experiment with line,
+            texture, and color to evoke feelings or stimulate thought,
+            encouraging viewers to interpret the work in personal and subjective
+            ways. The absence of clear subjects in abstract art invites a deeper
+            exploration of the viewer's imagination, allowing for a more open
+            and diverse range of interpretations and experiences.
+          </p>
+        </div>
+        <div class="font-mono p-5 bg-pink-600 text-xl">
+          <p>
+            Contemporary art refers to artwork created in the present time,
+            typically from the late 20th century to the present day. It reflects
+            the dynamic, diverse, and ever-evolving nature of modern society,
+            often addressing current social, political, and technological
+            issues. Artists working in contemporary art use a wide range of
+            mediums, from traditional painting and sculpture to innovative forms
+            like digital media, installations, and performance art. The
+            boundaries of what constitutes art are continually challenged,
+            encouraging experimentation and collaboration across different
+            disciplines. Contemporary art is marked by its inclusivity, with a
+            focus on diversity in terms of culture, identity, and perspective,
+            and often invites viewers to engage critically with the world around
+            them.
+          </p>
+        </div>
+        <div class="font-mono p-5 bg-pink-600 text-xl">
+          <p>
+            Modern-day art refers to the evolving and diverse practices in the
+            art world today, incorporating a wide range of styles, media, and
+            approaches. This genre includes artists who push the boundaries of
+            traditional art forms, blending digital technology, social
+            commentary, and interactive experiences into their work. Modern-day
+            artists often tackle pressing issues like climate change, identity,
+            politics, and globalization, using their art as a platform for
+            dialogue and reflection. With the rise of global connectivity, art
+            has become more inclusive, diverse, and accessible, with a growing
+            presence in online platforms, virtual galleries, and social media.
+            The constant experimentation and fusion of new technologies with
+            artistic expression define modern-day art, making it an exciting and
+            ever-changing landscape.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
